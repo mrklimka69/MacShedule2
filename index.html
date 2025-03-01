@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_content.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <div class="header_container">
+        <div class="wrapper">
+          <p class="header_container_label1">Зарплата грязными в час =</p>
+          <input type="number" class="header_container_input1" />
+          <div class="btn_wrapper">
+            <button class="header_container_btn">136.88</button>
+            <button class="header_container_btn">164.66</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header_container header_container_second">
+        <div class="wrapper2">
+          <p class="header_container_label2">Процент на налоги - 23%</p>
+
+          <!-- Использовать класс clear_salary для js -->
+          <p class="header_container_label2 clear_salary">Чистыми - 00.00грн</p>
+        </div>
+      </div>
+
+      <div class="header_container header_container_third">
+        <div class="wrapper3">
+          <p class="header_container_label3">
+            Среднее кол-во часов в день - 00:00
+          </p>
+          <p class="header_container_label3">Дней с брейком - 0</p>
+          <p class="header_container_label3">Дней без брейка - 0</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="wrapper_content1">
+        <h1 class="content_header">
+          Выберите первый день недели (понедельник):
+        </h1>
+
+        <input type="date" class="content_dateInput" />
+
+        <div class="table_holder">
+          <!-- ///////////////////////////// ПОНЕДЕЛЬНИК -->
+          <div class="table_row">
+            <p class="row_date_label">Пн:</p>
+
+            <input type="time" class="row_time_start" />
+
+            <p class="doble_dot">:</p>
+
+            <input type="time" class="row_time_finish" />
+
+            <p class="row_allTime_label">00:00</p>
+
+            <div class="row_choose_wrapper">
+              <div class="choose_wrapper_top">
+                <p class="choose_wrapper_top_label">Без брейка -</p>
+                <input type="checkbox" class="choose_wrapper_top_checkbox" />
+              </div>
+              <div class="choose_wrapper_bottom">
+                <p class="choose_wrapper_bottom_label">Двойной панч -</p>
+                <input type="checkbox" class="choose_wrapper_bottom_checkbox" />
+              </div>
+            </div>
+
+            <input type="text" class="row_input_jobName" />
+          </div>
+
+          <!-- ///////////////////////////// ВТОРНИК -->
+          <div class="table_row">
+            <p class="row_date_label">Вт:</p>
+
+            <input type="time" class="row_time_start" />
+
+            <p class="doble_dot">:</p>
+
+            <input type="time" class="row_time_finish" />
+
+            <p class="row_allTime_label">00:00</p>
+
+            <div class="row_choose_wrapper">
+              <div class="choose_wrapper_top">
+                <p class="choose_wrapper_top_label">Без брейка -</p>
+                <input type="checkbox" class="choose_wrapper_top_checkbox" />
+              </div>
+              <div class="choose_wrapper_bottom">
+                <p class="choose_wrapper_bottom_label">Двойной панч -</p>
+                <input type="checkbox" class="choose_wrapper_bottom_checkbox" />
+              </div>
+            </div>
+
+            <input type="text" class="row_input_jobName" />
+          </div>
+
+          <!-- ///////////////////////////// СРЕДА -->
+          <div class="table_row">
+            <p class="row_date_label">Ср:</p>
+
+            <input type="time" class="row_time_start" />
+
+            <p class="doble_dot">:</p>
+
+            <input type="time" class="row_time_finish" />
+
+            <p class="row_allTime_label">00:00</p>
+
+            <div class="row_choose_wrapper">
+              <div class="choose_wrapper_top">
+                <p class="choose_wrapper_top_label">Без брейка -</p>
+                <input type="checkbox" class="choose_wrapper_top_checkbox" />
+              </div>
+              <div class="choose_wrapper_bottom">
+                <p class="choose_wrapper_bottom_label">Двойной панч -</p>
+                <input type="checkbox" class="choose_wrapper_bottom_checkbox" />
+              </div>
+            </div>
+
+            <input type="text" class="row_input_jobName" />
+          </div>
+
+          <!-- ///////////////////////////// ЧЕТВЕРГ -->
+          <div class="table_row">
+            <p class="row_date_label">Чт:</p>
+
+            <input type="time" class="row_time_start" />
+
+            <p class="doble_dot">:</p>
+
+            <input type="time" class="row_time_finish" />
+
+            <p class="row_allTime_label">00:00</p>
+
+            <div class="row_choose_wrapper">
+              <div class="choose_wrapper_top">
+                <p class="choose_wrapper_top_label">Без брейка -</p>
+                <input type="checkbox" class="choose_wrapper_top_checkbox" />
+              </div>
+              <div class="choose_wrapper_bottom">
+                <p class="choose_wrapper_bottom_label">Двойной панч -</p>
+                <input type="checkbox" class="choose_wrapper_bottom_checkbox" />
+              </div>
+            </div>
+
+            <input type="text" class="row_input_jobName" />
+          </div>
+
+          <!-- ///////////////////////////// ПЯТНИЦА -->
+          <div class="table_row">
+            <p class="row_date_label">Пт:</p>
+
+            <input type="time" class="row_time_start" />
+
+            <p class="doble_dot">:</p>
+
+            <input type="time" class="row_time_finish" />
+
+            <p class="row_allTime_label">00:00</p>
+
+            <div class="row_choose_wrapper">
+              <div class="choose_wrapper_top">
+                <p class="choose_wrapper_top_label">Без брейка -</p>
+                <input type="checkbox" class="choose_wrapper_top_checkbox" />
+              </div>
+              <div class="choose_wrapper_bottom">
+                <p class="choose_wrapper_bottom_label">Двойной панч -</p>
+                <input type="checkbox" class="choose_wrapper_bottom_checkbox" />
+              </div>
+            </div>
+
+            <input type="text" class="row_input_jobName" />
+          </div>
+
+          <!-- ///////////////////////////// СУББОТА -->
+          <div class="table_row">
+            <p class="row_date_label">Сб:</p>
+
+            <input type="time" class="row_time_start" />
+
+            <p class="doble_dot">:</p>
+
+            <input type="time" class="row_time_finish" />
+
+            <p class="row_allTime_label">00:00</p>
+
+            <div class="row_choose_wrapper">
+              <div class="choose_wrapper_top">
+                <p class="choose_wrapper_top_label">Без брейка -</p>
+                <input type="checkbox" class="choose_wrapper_top_checkbox" />
+              </div>
+              <div class="choose_wrapper_bottom">
+                <p class="choose_wrapper_bottom_label">Двойной панч -</p>
+                <input type="checkbox" class="choose_wrapper_bottom_checkbox" />
+              </div>
+            </div>
+
+            <input type="text" class="row_input_jobName" />
+          </div>
+
+          <!-- ///////////////////////////// ВОСКРЕСЕНЬЕ -->
+          <div class="table_row">
+            <p class="row_date_label">Вс:</p>
+
+            <input type="time" class="row_time_start" />
+
+            <p class="doble_dot">:</p>
+
+            <input type="time" class="row_time_finish" />
+
+            <p class="row_allTime_label">00:00</p>
+
+            <div class="row_choose_wrapper">
+              <div class="choose_wrapper_top">
+                <p class="choose_wrapper_top_label">Без брейка -</p>
+                <input type="checkbox" class="choose_wrapper_top_checkbox" />
+              </div>
+              <div class="choose_wrapper_bottom">
+                <p class="choose_wrapper_bottom_label">Двойной панч -</p>
+                <input type="checkbox" class="choose_wrapper_bottom_checkbox" />
+              </div>
+            </div>
+
+            <input type="text" class="row_input_jobName" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
