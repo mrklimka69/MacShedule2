@@ -20,7 +20,7 @@
     width: 33.33%;
     height: 100%;
 
-    background: #bdfabd;
+    /* background: #bdfabd; */
 
     display: flex;
     justify-content: center;
@@ -60,6 +60,7 @@
     border-radius: 8px;
     width: 86px;
     height: 30px;
+    font-size: 16px;
 
     background: #fff;
 
@@ -99,6 +100,10 @@
     background: #328bff;
 }
 
+.header_container_btn:active {
+    transform: scale(0.9);
+}
+
 .btn_wrapper {
     display: grid;
     justify-content: center;
@@ -130,12 +135,6 @@
     align-items: center;
     width: auto;
     height: 65px;
-
-    /* padding-top: 32px; */
-
-
-
-    /* background: #08ee23; */
 }
 
 .header_container_label3 {
@@ -161,6 +160,4 @@
     align-items: center;
     width: auto;
     height: auto;
-
-    /* background: #08ee23; */
 }
