@@ -343,8 +343,6 @@ function countAll() {
         result += '\n' + 'Итого ' + getNormalTimeFromMillies(timeOfTheWeek) + ' (~' + salaryOfTheWeek.toFixed(0) + 'грн)';
     }
 
-    console.log(timeOfTheWeek);
-
 
 
     document.getElementById('itog_label').innerHTML = 'Итого: ' + getNormalTimeFromMillies(timeOfTheWeek) + ' = ' + salaryOfTheWeek.toFixed(2) + 'грн';
