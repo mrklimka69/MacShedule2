@@ -2,6 +2,8 @@ document.getElementById('fullText_input').oninput = read;
 
 
 function read() {
+    clearAllInfo();
+
     let fullText = document.getElementById('fullText_input').value + "\n";
     let rows = getOnlyNeededRows(getRows(fullText));
 
@@ -173,4 +175,48 @@ function isBreak(row) {
     } else {
         return true;
     }
+}
+
+function clearAllInfo() {
+    document.getElementById('row_time_start_pn').value = "00:00";
+    document.getElementById('row_time_finish_pn').value = "00:00";
+    document.getElementById('choose_wrapper_top_checkbox_pn').checked = false;
+    document.getElementById('choose_wrapper_bottom_checkbox_pn').checked = false;
+    document.getElementById('row_input_jobName_pn').value = '';
+
+    document.getElementById('row_time_start_vt').value = "00:00";
+    document.getElementById('row_time_finish_vt').value = "00:00";
+    document.getElementById('choose_wrapper_top_checkbox_vt').checked = false;
+    document.getElementById('choose_wrapper_bottom_checkbox_vt').checked = false;
+    document.getElementById('row_input_jobName_vt').value = '';
+
+    document.getElementById('row_time_start_sr').value = "00:00";
+    document.getElementById('row_time_finish_sr').value = "00:00";
+    document.getElementById('choose_wrapper_top_checkbox_sr').checked = false;
+    document.getElementById('choose_wrapper_bottom_checkbox_sr').checked = false;
+    document.getElementById('row_input_jobName_sr').value = '';
+
+    document.getElementById('row_time_start_cht').value = "00:00";
+    document.getElementById('row_time_finish_cht').value = "00:00";
+    document.getElementById('choose_wrapper_top_checkbox_cht').checked = false;
+    document.getElementById('choose_wrapper_bottom_checkbox_cht').checked = false;
+    document.getElementById('row_input_jobName_cht').value = '';
+
+    document.getElementById('row_time_start_pt').value = "00:00";
+    document.getElementById('row_time_finish_pt').value = "00:00";
+    document.getElementById('choose_wrapper_top_checkbox_pt').checked = false;
+    document.getElementById('choose_wrapper_bottom_checkbox_pt').checked = false;
+    document.getElementById('row_input_jobName_pt').value = '';
+
+    document.getElementById('row_time_start_sb').value = "00:00";
+    document.getElementById('row_time_finish_sb').value = "00:00";
+    document.getElementById('choose_wrapper_top_checkbox_sb').checked = false;
+    document.getElementById('choose_wrapper_bottom_checkbox_sb').checked = false;
+    document.getElementById('row_input_jobName_sb').value = '';
+
+    document.getElementById('row_time_start_vs').value = "00:00";
+    document.getElementById('row_time_finish_vs').value = "00:00";
+    document.getElementById('choose_wrapper_top_checkbox_vs').checked = false;
+    document.getElementById('choose_wrapper_bottom_checkbox_vs').checked = false;
+    document.getElementById('row_input_jobName_vs').value = '';
 }
